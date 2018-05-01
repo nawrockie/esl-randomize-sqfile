@@ -87,9 +87,10 @@ $usage .= "\t\t\toutput 10\% of the sequences in input.fa split into 10 files [n
 $usage .= "\t\t\tin random order\n\n";
 $usage .= "\t\t'esl-randomize-sqfile.pl -I new.fa\n";
 $usage .= "\t\t\toutput information on seqs in new.fa and exit (don't randomize new.fa)\n\n\n";
-$usage .= "\tNOTE: it's currently not possible to output seqs in the order\n";
-$usage .= "\t      they appear in the input file (due to SSI dependence)\n";
-$usage .= "\t      they will always be in random order\n\n";
+$usage .= "\tNOTE: See esl-ssplit.pl in Bio-Easel for more efficient randomization of\n";
+$usage .= "\t      sequence files, that doesn't use SSI. *This* script is only superior\n";
+$usage .= "\t      to esl-ssplit.pl for one use case: when you want a random subset of the\n";
+$usage .= "\t      sequences.\n\n";
 
 if((! $do_info && scalar(@ARGV) != 2) || ($do_info && scalar(@ARGV != 1))) { die $usage; }
 my ($in_sqfile, $fraction);
