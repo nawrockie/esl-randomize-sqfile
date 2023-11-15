@@ -68,7 +68,7 @@ if($outfile_root ne "") {
 }
 
 my $usage;
-$usage  = "esl-randomize-sqfile.pl v0.02\n\n";
+$usage  = "esl-randomize-sqfile.pl v0.03\n\n";
 $usage  = "Usage:\n";
 $usage  = "esl-randomize-sqfile.pl [OPTIONS] <seqfile to randomize> <F: fraction of sequences to include>\n";
 $usage .= "esl-randomize-sqfile.pl -I        <seqfile to get info on>\n\n";
